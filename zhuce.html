@@ -1,0 +1,95 @@
+<html>
+  <head>
+  <title>注册页面</title>
+  </head>
+  
+   <body background="E:\html项目资料\html项目\photo\zhuce.jpg">
+   
+  <div align="center">
+  <font face="宋体" size="10" color="#FF0000"><b><i>注册</b></i></font>
+  <br><br><br><br>
+  <form action="" method="password" name="aaa">
+  <table border="1"  bordercolor="#9933FF" cellspacing="0"     cellpadding="1" width="60%" >
+  
+  <tr>
+  <th width="20%">昵&nbsp&nbsp称</th>
+  <td width="80%" valign="bottom">&nbsp&nbsp<input type="text"   name=="UserName" size="15" maxlength="10">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <font size="2" color="#FF0000">英文字母,数字(0-9),长度4-20位</td>
+  </tr>
+  
+  <tr>
+  <th>密&nbsp&nbsp码</th>
+  <td>&nbsp&nbsp<input type="password" name="MiMa" size="15" maxlength="20"><font size="2" color="#FF0000">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp密码长度最多为20个字符</font></td>
+  </tr>
+  
+  <tr>
+  <th>性&nbsp&nbsp别</th>
+  <td>&nbsp&nbsp<input type="radio" name="sex" value="man" >男
+      &nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="sex" vale="woman" >女
+  </td>
+  </tr>
+  
+  <tr>
+  <th>破壳日</th>
+  <td>&nbsp&nbsp<select name="year">  
+   <script language="javascript">
+    for(var i=1990;i<=2016;i++){
+    document.writeln("<option>"+i+"</option>");
+      }
+      </script>
+      </select>年
+	  
+	  
+      <select name="month">
+      <script language="javascript">
+      for(var i=1;i<=12;i++){
+      document.writeln("<option>"+i+"</option>");
+      }
+      </script>  
+      </select>月
+	  
+      <select name="day">
+      <script language="javaScript">
+      for(var i=1;i<=31;i++){
+      document.writeln("<option>"+i+"</option>");
+      }
+      </script>
+      </select>日</td>
+  </tr>
+  
+  <tr>
+  <th>爱&nbsp&nbsp好</th>
+  <td>&nbsp
+      <input type="checkbox" name="hobby" value="sports" >运动
+      <input type="checkbox" name="hobby" value="journey">旅游
+      <input type="checkbox" name="hobby" value="read">读书
+	  <input type="checkbox" name="hobby" value="film">摄影
+      <input type="checkbox" name="hobby" value="cate" >美食
+      <input type="checkbox" name="hobby" value="sing" >唱歌
+      <input type="checkbox" name="hobby" value="movie" >电影
+	  <input type="checkbox" name="hobby" value="game">游戏
+  </td>
+  </tr>
+  
+  <tr>
+  <th>个人照片</th>
+  <td>&nbsp&nbsp<input type="file" name="photo">
+      <input type="button" value="上传">
+  </td>
+  </tr>
+  
+  <tr>
+  <th>个人说明</th>
+  <td>&nbsp&nbsp<textarea  rows="10" cols="50"
+   name="content"></textarea>
+  </td>
+  </tr>
+  
+  <tr>
+  <td colspan="2" align="center">
+  <input type="submit" value="提交">
+  &nbsp&nbsp&nbsp&nbsp<input type="reset" value="重置">
+  </td>
+  </form>
+  </div>
+</html>
