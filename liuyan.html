@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<body background="E:\html项目资料\html项目\photo\yy17.gif">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>留言板</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #000000
+}
+.STYLE2 {
+	color: #000000;
+	font-size: xx-large;
+	font-weight: bold;
+}
+.STYLE3 {
+	font-size: xx-large;
+	font-weight: bold;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+#apDiv1 {
+	position:absolute;
+	left:258px;
+	top:169px;
+	width:786px;
+	height:38px;
+	z-index:1;
+}
+.STYLE5 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 24px;
+}
+body {
+	background-color: #333333;
+}
+
+#fengexian {			height:17px;
+			background-image:url(images/4.gif);
+}
+
+
+
+.STYLE6 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.STYLE8 {
+	font-size: 22px;
+	margin-left:15px;
+}
+.STYLE9 {font-size: 18px}
+#apDiv2 {
+	position:absolute;
+	left:456px;
+	top:632px;
+	width:247px;
+	height:65px;
+	z-index:1;
+}
+#apDiv3 {
+	position:absolute;
+	left:316px;
+	top:695px;
+	width:161px;
+	height:50px;
+	z-index:1;
+}
+#apDiv4 {
+	position:absolute;
+	left:815px;
+	top:671px;
+	width:228px;
+	height:42px;
+	z-index:1;
+}
+#apDiv5 {
+	position:absolute;
+	left:786px;
+	top:614px;
+	width:209px;
+	height:60px;
+	z-index:2;
+}
+.STYLE10 {font-size: 24px}
+-->
+</style>
+<script type="text/javascript">
+<!--
+<!--
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1998, 1999, 2000, 2001, 2002, 2003, 2004 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+//-->
+
+function isSub(){
+	if( confirm("是否提交留言？") ){
+		return true; 
+	}else{
+		return false;
+	}
+ 
+ }
+
+function MM_initTimelines() { //v4.0
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    var ns4 = (ns && parseInt(navigator.appVersion) == 4);
+    var ns5 = (ns && parseInt(navigator.appVersion) > 4);
+    var macIE5 = (navigator.platform ? (navigator.platform == "MacPPC") : false) && (navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4);
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 16;
+    document.MM_Time[0][0].value = "MM_timelineGoto('Timeline1','1')";
+    document.MM_Time[0].lastFrame = 16;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_timelinePlay('Timeline1')">
+
+<div align="center">
+<table width="1000" border="0" align="center" bordercolor="#999933">
+    <tr>
+	  <td height="149" colspan="1" background="E:\html项目资料\html项目\photo\denglu.jpg"></td>
+	  
+      <td height="149" colspan="2">
+	  <font size="+4" color="#FFFF99"><b><i>奇葩朵朵开</i></b></font>
+	  <br><br><br><br>
+	  <font size="+1" color="#FFFF99"><b><i>个性签名：人世间每一次相遇都是久别重逢。</i></b></font>
+	  </td>
+    </tr>
+    <tr>
+      <td width="190" height="564" valign="top"><div align="center">
+        <p>&nbsp;</p>
+          <p class="STYLE2"><a href="zhuye.html"><font color="#FFFF99">主页</font></a></p>
+          <p class="STYLE2"><a href="suibi.html"><font color="#FFFF99">随笔</font></a></p>
+          <p class="STYLE2"><a href="sheying.html"><font color="#FFFF99">摄影</font></a></p>
+          <p class="STYLE2"><a href="music.html"><font color="#FFFF99">音乐</font></a></p>
+		  <p class="STYLE2"><a href="animal.html"><font color="#FFFF99">萌宠</font></a></p>
+		  <p class="STYLE2"><a href="denglu.html"><font color="#FFFF99">退出</font></a></p>
+          <p class="STYLE2">&nbsp;</p>
+          <p class="STYLE3">&nbsp;</p>
+      </div></td>
+	  
+      <td width="800" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000">
+        <tr>
+          <td height="34"><span class="STYLE5"><font color="#FFFF99">首页&gt;留言</font></span></td>
+          </tr>
+      </table>
+      
+	  <form id="form1" name="form1" method="post" action="" onsubmit = "return isSub();">
+        <div align="center" class="STYLE6">
+          <p class="STYLE7"><font color="#FFFF99"><i>谢谢你的关心，么么哒</i></font></p>
+          <p><font color="#FFFF99">姓名</font>
+            <label>
+            <input type="text" name="textfield1" id="textfield1" />
+            </label>
+          </p>
+          
+          <p><font color="#FFFF99">QQ&nbsp;</font>
+            <label>
+            <input type="text" name="textfield2" id="textfield2" />
+            </label>
+          </p>
+         
+          <p><font color="#FFFF99">留言</font>
+            <label>
+            <textarea name="textarea" id="textarea" cols="25" rows="8"></textarea>
+            </label>
+          </p>
+		  
+          <p>
+            <label>
+            <input type="submit" name="button" id="button" value="提交" />
+            </label>
+            <label>
+            <input type="reset" name="button2" id="button2" value="重置" />
+            </label>
+          </p>
+        </div>
+      </form>    
+      <p>&nbsp;</p>
+ 
+      
+	
+      <div id="fengexian"> </div>
+      &nbsp;</p>     </td>
+    </tr>
+    
+  
+  </table>
+</div>
+</body>
+</html>
